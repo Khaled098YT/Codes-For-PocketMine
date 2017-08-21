@@ -22,7 +22,7 @@ class Config extends PluginBase implements Listener{ // Here you must type imple
 	public function onCommand(CommandSender $sender, Command $cmd, $label, array $args){
 		switch($cmd->getName()){
 			case 'testconfig':
-			$msg = $this->getConfig()->get("msg");
+			$msg = $this->getConfig()->get("msg"); // this code is for getting the config
 			$sender->sendMessage($msg);
 		}
 	}
